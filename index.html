@@ -3,30 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carpooling Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Carpooling Hub</title>
+    <link rel="stylesheet" href="2.css">
 </head>
 <body>
     <header>
-        <h1>Carpooling Platform</h1>
+        <div class="logo">
+            <img src="data:image/jpeg;base64,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" alt="Carpooling Logo" alt="Carpooling Logo">
+            <h1>Carpooling Hub</h1>
+
+        </div>
+        <button onclick="window.location.href='login.html';" id="login">Login</button>
     </header>
+    
     <main>
-        <button onclick="window.location.href='home.html';">Back to Home</button>
-        <section class="form-section">
-            <h2>Offer a Ride</h2>
-            <form id="rideForm">
-                <input type="text" id="start" placeholder="Starting point" required>
-                <input type="text" id="destination" placeholder="Destination" required>
-                <input type="datetime-local" id="datetime" required>
-                <input type="number" id="seats" placeholder="Number of available seats" required>
-                <button type="submit">Submit</button>
-            </form>
+        <section class="top-buttons">
+            <button onclick="window.location.href='#';">Home</button>
+            <button onclick="window.location.href='homepag2.html';">Offer a Ride</button>
         </section>
-        <section class="rides-section">
-            <h2>Available Rides</h2>
-            <div id="ridesList"></div>
+
+        <section class="hero">
+            <h2>Join the Carpooling Revolution</h2>
+            <p>Share rides, save money, and reduce your carbon footprint!</p>
+            <button onclick="window.location.href='homepag2.html';">Find a Ride</button>
+        </section>
+
+        <section class="benefits">
+            <h2 class="123">Why Carpooling?</h2>
+            <div class="benefit">
+                <img src="https://imgs.search.brave.com/wY0C4Lq-I75gHBhI5yAjQljBMwbOu7X1C-n85ga-xBQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE4/OTU0NTU3MC9waG90/by9oaWdod2F5LXVy/YmFuLXRyYWZmaWMu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PWxoSkp4NUtxTHJk/b3FRMFo1RWxBMUdw/SG96bVlUa3kzVV9a/SlFtRlRDRnM9" alt="Traffic Icon">
+                <p>Traffic Reduction</p>
+            </div>
+            <div class="benefit">
+                <img src="https://imgs.search.brave.com/BUvZrRDS5G3S5mLOCjIaQoPxecMsoGCIQcZ0550_8sg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9lYXJ0/aGhlcm8uY29tL2Nk/bi9zaG9wL2FydGlj/bGVzL0VIX0Jsb2df/RWFydGhEYXkyMDI0/X0ZlYXR1cmVfMTgw/MHgucG5nP3Y9MTcx/MTU3MDI0NQ" alt="Eco Icon">
+                <p>Environmental Friendly</p>
+            </div>
+            <div class="benefit">
+                <img src="https://imgs.search.brave.com/c0ZtfixL3Z_2TbAQcNSrcjVucAc5Ndjsz_a4PtL9LXc/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9j/b2lucy1nbGFzcy1q/YXItbW9uZXktc2F2/aW5nLWZpbmFuY2lh/bC1jb25jZXB0XzEx/NTAtNDU3MDguanBn/P3NpemU9NjI2JmV4/dD1qcGc"" alt="Save Icon">
+                <p>Save Money</p>
+            </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2024 Carpooling Hub</p>
+    </footer>
 </body>
 </html>
