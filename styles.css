@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #494b4b;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+.form-section, .rides-section {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"], input[type="number"], button {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #494b4b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#ridesList {
+    margin-top: 20px;
+}
